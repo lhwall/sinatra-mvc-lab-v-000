@@ -18,6 +18,7 @@ def piglatinize(original_text)
     if !letter.match(/[aeiouAEIOU]/)
       beginning << letter
       word_array.delete(letter)
+      binding.pry
     else
       binding.pry
       @new_text = beginning << word_array.join("") << "ay"
