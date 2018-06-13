@@ -20,7 +20,6 @@ def piglatinize(original_text)
       word_array.delete(letter)
       binding.pry
     else
-      binding.pry
       @new_text = beginning << word_array.join("") << "ay"
       return @new_text
     end
